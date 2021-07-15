@@ -1,0 +1,8 @@
+.bg-light{
+  background-color: #ffff;
+  color: #000;
+}
+.bg-dark{
+  background-color: rgb(39, 39, 39);
+  color: #ffff;
+}
