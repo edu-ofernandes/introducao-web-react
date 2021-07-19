@@ -34,6 +34,7 @@ class App extends React.Component {
       <div className={`container container-bg-${this.state.value}`}>
         <h1>Olá {this.props.nome}</h1>
         <Lista />
+        {/* <Formulario /> */}
         <button type="button" className={`change-color-button bg-${this.state.value}`} onClick={this.changeColor}>Modo {this.state.value === 'light' ? 'dark' : 'light'} </button>
       </div>
     )
@@ -70,9 +71,9 @@ class Lista extends React.Component{
 }
 
 class Item extends React.Component{
-  // constructor(props){
-  //   super(props);
-  // }
+  /*constructor(props){
+    super(props);
+  }*/
 
   render(){
     const textDecoration = this.props.feito ? 'line-through' : 'none';
@@ -83,5 +84,15 @@ class Item extends React.Component{
     )
   }
 }
+
+/*class Formulario extends React.Component{
+  constructor(props){
+    super(props)
+  }
+
+  render(){
+    return(null)
+  }
+}*/
 
 export default App;
